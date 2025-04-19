@@ -1,3 +1,13 @@
+# Ignorar el lock y módulos de frontend
+/apps/frontend/node_modules/
+/apps/frontend/package-lock.json
+/apps/frontend/eslint.config.js
+
+# Ignorar build y cachés TS de Vite
+/apps/frontend/dist/
+/apps/frontend/tsconfig.app.tsbuildinfo
+/apps/frontend/tsconfig.node.tsbuildinfo
+
 # Node.js dependencies
 /node_modules/
 /apps/frontend/node_modules/
