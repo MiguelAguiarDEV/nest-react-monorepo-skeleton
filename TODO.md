@@ -1,0 +1,5 @@
+- [ ] Crear skeleton del backend
+- [ ] Configurar base de datos
+- [ ] Implementar autenticación básica
+- [ ] Crear endpoints iniciales de la API
+- [ ] Escribir pruebas unitarias básicas
