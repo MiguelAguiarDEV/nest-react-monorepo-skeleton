@@ -1,0 +1,33 @@
+{
+  "name": "nest-react-monorepo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "workspaces": [
+    "apps/frontend",
+    "apps/backend",
+    "packages/*"
+  ],
+  "scripts": {
+    "format": "prettier --write .",
+    "lint": "eslint . --ext .js,.jsx,.ts,.tsx",
+    "check": "npm run lint && npm run format",
+    "frontend:dev": "npm --prefix apps/frontend run dev",
+    "frontend:test": "npm --prefix apps/frontend run test",
+    "backend:dev": "npm --prefix apps/backend run start:dev",
+    "backend:test": "npm --prefix apps/backend run test",
+    "dev": "concurrently \"npm run backend:dev\" \"npm run frontend:dev\"",
+    "test": "npm run backend:test && npm run frontend:test"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "concurrently": "^8.0.1",
+    "eslint": "^9.25.0",
+    "@eslint/js": "^9.25.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.2.6",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.3",
+    "typescript-eslint": "^8.30.1"
+  }
+}
