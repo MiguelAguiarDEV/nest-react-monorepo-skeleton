@@ -3,3 +3,5 @@
 - [ ] Implementar autenticación básica
 - [ ] Crear endpoints iniciales de la API
 - [ ] Escribir pruebas unitarias básicas
+- [ ] Github Actions
+- [ ] Dockerizacion
